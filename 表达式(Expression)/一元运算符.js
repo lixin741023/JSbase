@@ -12,10 +12,12 @@ console.log(a); // 8
 
 // 后增量/后减量运算符：
 // 后缀式运算符是在计算过包含它们的表达式后才进行增量或减量运算的。考虑以下的例子：
-let b= 10;
+let b=10;
 b--; // 9 等价于：b=b-1
 console.log(b);	//输出 "9"
 console.log(b--);	//输出 "9"
 console.log(b);	//输出 "8"
 
-
+let c='1';
+console.log(typeof c,c);
+console.log(typeof +c, +c);

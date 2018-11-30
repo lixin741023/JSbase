@@ -1,4 +1,4 @@
-// Symbol函数可以接受一个字符串作为参数，表示对 Symbol 实例的描述。
+// Symbol函数可以接受一个字符串作为参数，表示对 Symbol 实例的描述(description)。
 // |>如果不传参数，在控制台打印出来则无法区分
 let a=Symbol();
 let b=Symbol();

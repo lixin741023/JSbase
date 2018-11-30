@@ -5,7 +5,7 @@ let obj={
     b:2,
     c:3
 };
-// 第一种：展开运算符（spread operator），把东西分开，可以作用在Array和Object上。
+// 第一种：扩展运算符（spread operator），把东西分开，可以作用在Array和Object上。扩展运算符（...）内部使用for...of循环
 // 第二种：剩余运算符（rest operator）。
 
 let arr1=[1,2];

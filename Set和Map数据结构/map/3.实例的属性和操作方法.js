@@ -30,3 +30,18 @@ console.log(m2.set(1,2)); // Map{ 1=>2 }
 
 // 特性：Map 的遍历顺序就是插入顺序。
 
+let m3=new Map([[1,11],[2,22]]);
+console.log(m3);
+for(let i of m3.keys()){
+    // console.log(i); // 1 2
+}
+for(let i of m3.values()){
+    // console.log(i) // 11 22
+}
+for(let i of m3.entries()){
+    // console.log(i);  // [1, 11] [2, 22]
+}
+
+// |>Map 结构的默认遍历器接口（Symbol.iterator属性），就是entries方法。
+console.log(m3[Symbol.iterator]);
+console.log(Map.prototype[Symbol.iterator]);

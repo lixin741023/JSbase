@@ -11,3 +11,5 @@ console.log(b); // 111
 // 逗号运算符
 // 用逗号运算符可以在一条语句中执行多个运算。
 let c=1,d=2,e=3;
+
+2>22?console.log(1):console.log(2);

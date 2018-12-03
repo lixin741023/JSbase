@@ -1,7 +1,7 @@
 // 要弄懂 javascript 中的原型和原型链，首先要知道，在 javascript 中一切皆为对象，但对象又区分为 普通对象 和 函数对象。
 // 如何区分 函数对象 和 普通对象：
 // 凡是通过 new Function() 创建的对象都是函数对象，其他的都是普通对象！
-// 也就是说 console.log(XXX) 的结果是 function 那么它就一定是 函数对象 。
+// 也就是说 console.log(typeof XXX) 的结果是 function 那么它就一定是 函数对象 。
 
 // 每个对象都有 __proto__ 属性，但只有函数对象才有 prototype 属性
 
@@ -24,4 +24,5 @@ let one1=new Person('lx', 25);
 console.log(typeof one1); // object
 console.log(one1.name); // lx
 console.log(one1.print); // 99
-console.log(Person.__proto__===Function.prototype);
+console.log(Person.__proto__===Function.prototype); // 因为我的 Person 函数是通过 Function 创建的，可以说 Person 是 Function 的一个实例
+console.log(one1.prototype); // undefined

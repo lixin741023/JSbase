@@ -31,3 +31,10 @@ console.log(lx.hasOwnProperty('name')); // true
 console.log(lx.hasOwnProperty('year')); // true
 console.log(lx.hasOwnProperty('say')); // false
 console.log(lx.hasOwnProperty('active')); // false
+
+console.log(typeof Person); // function
+console.log(Person); // [Function: Person]
+console.log(typeof Point); // function
+console.log(Point); // [Function: Point]
+
+// <|由上述可见，类的本质，也只是一个函数而已。

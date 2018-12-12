@@ -8,7 +8,7 @@
 let arr=[33,44,55];
 for(let i in arr){
     console.log(i); // 0 1 2
-    console.log(typeof i); // string  解释：数组索引只是具有整数名称的枚举属性，与普通对象属性相同，是字符串string类型。
+    console.log(typeof i); // string  解释：数组索引只是具有整数名称的枚举属性，与普通对象属性相同，并且是字符串string类型。
 }
 // 使用for...in语句，遍历一个数组的时候，以下需要注意：
 // *不能保证for ... in将以任何特定的顺序返回索引。

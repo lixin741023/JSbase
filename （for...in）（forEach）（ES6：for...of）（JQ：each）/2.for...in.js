@@ -27,4 +27,6 @@ for(let i in obj){
     console.log(i); // name year print
 }
 
+// 对于for...in的循环，可以由break, throw 或return终止。在这些情况下，迭代器关闭。
+
 // ***for...in 语句以原始插入顺序迭代对象的可枚举属性。

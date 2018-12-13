@@ -1,4 +1,4 @@
-// null 和 undefined
+// null 和 undefined 有什么区别？怎么使用？
 
 // null：
 // 表示一个特殊值。

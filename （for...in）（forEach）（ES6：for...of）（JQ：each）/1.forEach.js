@@ -7,3 +7,10 @@ arr.forEach((x,y,z)=>{
     console.log(z); // 数组本身
 });
 // 无法中途退出循环，break 命令和 return 都不生效。
+
+let obj={
+    name:'lx',
+    year: 25
+};
+// Object 不具备forEach方法。
+// obj.forEach is not a function。

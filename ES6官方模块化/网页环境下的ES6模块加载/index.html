@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="js/module1.js" type="module"></script>
+<script src="js/module2.js" type="module"></script>
+<script type="module">
+    import {name} from "./js/module1.js";
+    import {year} from "./js/module2.js";
+
+    console.log(name);
+    console.log(year);
+    console.log(Window);
+</script>
+</body>
+</html>

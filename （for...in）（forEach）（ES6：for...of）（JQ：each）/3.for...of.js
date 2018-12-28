@@ -7,9 +7,9 @@
 // variable：在每次迭代中，将不同属性的值分配给变量。
 // iterable：被迭代枚举其属性的对象。
 
-let arr=[11,22,33,44];
+let arr=[11,22,33,44, {num:55}];
 for(let i of arr){
-    console.log(i); // 11 22 33 44
+    console.log(i); // 11 22 33 44 {num:55}
 }
 
 let str='justFun';

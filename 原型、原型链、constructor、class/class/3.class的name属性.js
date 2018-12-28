@@ -8,3 +8,8 @@ let Person1=class p1 {
     
 };
 console.log(Person1.name); // p1
+
+function f_fun() {
+
+}
+console.log(f_fun.name); // f_fun

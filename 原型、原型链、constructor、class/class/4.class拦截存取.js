@@ -1,7 +1,7 @@
 // 与 ES5 一样，在“类”的内部可以使用 get 和 set 关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。
 class Person1{
     get myName(){
-        return 'lx'
+        return 'lx';
     }
     set myName(x){
         return this.name=x+'1';

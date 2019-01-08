@@ -9,13 +9,18 @@ console.log(a===b); // true
 let obj={};
 obj[a]=function () { // #1
     console.log('a');
-}
+};
 obj[b]=function () { // #2
     console.log('b');
-}
-obj[a](); // b
-obj[b](); // b
-// <|因为 变量a 和 变量b 都是同一个Symbol值，所以 #2 覆盖了 #1 的函数，所以上述都打印出了b。
+};
+obj[Symbol.for('a')]=function (){ // #3
+    console.log('c');
+};
+obj[a](); // c
+obj[b](); // c
+obj[Symbol.for('a')](); // c
+
+// <|#1、#2、#3 其实都是同一个变量，他们层层覆盖，所以最后打印出来的是 c
 
 // Symbol.for() 与 Symbol()的区别：
 // 前者会被登记在全局环境中供搜索，而后者不会。

@@ -25,7 +25,7 @@ console.log(m2.set(1,2)); // Map{ 1=>2 }
 
 // keys()：返回键名的遍历器。
 // values()：返回键值的遍历器。
-// entries()：返回所有成员的遍历器。
+// entries()：返回所有成员的遍历器。 - 默认
 // forEach()：遍历 Map 的所有成员。
 
 // 特性：Map 的遍历顺序就是插入顺序。
@@ -43,5 +43,5 @@ for(let i of m3.entries()){
 }
 
 // |>Map 结构的默认遍历器接口（Symbol.iterator属性），就是entries方法。
-console.log(m3[Symbol.iterator]);
-console.log(Map.prototype[Symbol.iterator]);
+console.log(m3[Symbol.iterator]); // [Function: entries]
+console.log(Map.prototype[Symbol.iterator]); // [Function: entries]

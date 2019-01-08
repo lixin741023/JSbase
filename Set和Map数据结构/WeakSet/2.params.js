@@ -3,5 +3,4 @@
 let ws1=new WeakSet([[1,2],[2,3],[3,4]]);
 console.log(ws1);
 
-// TODO: 继续完善WeakSet的内容
 // WeakSet 未完待续，为何在node环境下打印不出东西，在浏览器环境下能打印出？

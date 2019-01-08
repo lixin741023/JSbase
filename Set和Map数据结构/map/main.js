@@ -1,4 +1,4 @@
-// javaScript 中的对象（Object），本质上是键值对的集合（Hash结构），但是却只能使用字符串来当做对象的 键（Key）。
+// javaScript 中的对象（Object），本质上是键值对的集合（Hash结构），但是却只能使用 字符串 来当做对象的 键（Key）。
 // |>例如：
 /***
     let obj={};

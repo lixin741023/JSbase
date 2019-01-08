@@ -5,7 +5,7 @@
 let sym=Symbol();
 let obj1={
     name:'lx'
-}
+};
 obj1[sym]='Hallo';
 console.log(obj1); // { name:'lx', [Symbol()]:'Hello' }
 // <|这里为什么不使用点运算符来操作？？即 obj1.sym='XXX' ？？
@@ -16,10 +16,11 @@ let a=Symbol();
 let b=Symbol('Fun');
 let obj2={
     name:'lx',
-    [a]: 'best!',
+    [a]:'best!',
     [b](x){
         return x // #1
-    }
-}
+    },
+    [Symbol()]:'go!'
+};
 console.log(obj2); // { name:'lx', [Symbol()]:'best!'}
 console.log(obj2[b]('just one night~')); // #1：运用的简写叫做：采用增强的对象写法

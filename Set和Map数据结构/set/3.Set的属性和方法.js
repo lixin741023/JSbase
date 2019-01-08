@@ -13,7 +13,7 @@
 
 // 遍历方法（用于遍历成员）
 // *Set.prototype.keys() 返回键名的遍历器
-// *Set.prototype.values() 返回键值的遍历器
+// *Set.prototype.values() 返回键值的遍历器 - 默认
 // *Set.prototype.entries() 返回键值对的遍历器
 // *Set.prototype.forEach() 使用回调函数遍历每个成员
 
@@ -31,7 +31,11 @@ for(let i of s1.values()){
     // console.log(i); // 11 22 33 44
 }
 for(let [i,z] of s1.entries()){
-    // console.log(i); // [11, 11] [22, 22] [33, 33] [44, 44]
+    // console.log(i); // 11 22 33 44
+    // console.log(z); // 11 22 33 44
+}
+for (let item of s1.entries()){
+    // console.log(item); // [11,11] ['22','22'] [33,33] [44,44]
 }
 console.log(s1);
 console.log(s1.keys());

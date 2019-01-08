@@ -1,3 +1,4 @@
+// todo:WeakSet暂不考虑完善，原因在于感觉并不常用。
 // WeakSet:   （弱的set结构）   （弱set结构）
 
 

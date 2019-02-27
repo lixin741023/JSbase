@@ -6,7 +6,7 @@ arr.forEach((x,y,z)=>{
     console.log(y); // 下标     0  1  2  3
     console.log(z); // 数组本身
 });
-// 无法中途退出循环，break 命令和 return 都不生效。
+// 无法中途退出循环，break 命令和 return 都不生效!!!
 
 let obj={
     name:'lx',

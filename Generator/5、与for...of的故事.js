@@ -18,4 +18,4 @@ console.log( // 0 1 2 3 4
 // Array.from方法内部调用的
 // <|都是遍历器接口。这意味着，它们都可以将 Generator 函数返回的 Iterator 对象，作为参数。
 
-// todo 可以在 Generator 函数中调用另外一个Generator 函数，需要用到 yiled *，有待后续继续完善。
+// todo 可以在 Generator 函数中调用另外一个Generator 函数，需要用到 yield *，根据日常工作使用评率，考虑有待后续继续完善。

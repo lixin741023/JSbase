@@ -13,7 +13,11 @@ function f1(x,y) {
     return `${this.name} 的身高是 ${x}, 体重是 ${y}。`
 }
 
-console.log(f1.call(obj1,100,200)); // lx 的身高是 100，体重是 200
-console.log(f1.apply(obj2,[50,150])); // wk 的身高是 50，体重是 150
+console.log( // lx 的身高是 100，体重是 200
+    f1.call(obj1,100,200)
+);
+console.log( // wk 的身高是 50，体重是 150
+    f1.apply(obj2,[50,150])
+);
 
 // <|上述 call 和 apply 的唯一区别是：当需要传递参数时，apply 是必须以数组形式来传递参数。

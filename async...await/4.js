@@ -1,4 +1,6 @@
 // 错误处理
+// async 函数内部抛出的错误，同样会让 Promise 对象变为 reject 的状态，
+// <|错误同样会被 catch 函数捕捉到。
 
 async function f(bool) {
     let a = await asyncFun1();

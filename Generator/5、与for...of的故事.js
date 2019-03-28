@@ -7,7 +7,7 @@ function* f() {
     }
 }
 
-console.log( // 0 1 2 3 4
+console.log( // [0, 0a] [1, 1a], [2, 2a], [3, 3a] [4, 4a]
     ...f()
 );
 

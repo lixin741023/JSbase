@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="file" id="file" onchange="show()">
+<script>
+  function show() {
+
+    console.log(file.files[0]); // FilesList 实例中 有 File 对象的实例。
+
+  }
+</script>
+</body>
+</html>

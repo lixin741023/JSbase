@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="file" id="A" onchange="gaga()">
+<hr>
+<div class="end"></div>
+<script>
+  function gaga() {
+    let file = A.files[0];
+    let url = URL.createObjectURL(file);
+    let img = document.createElement('img');
+    img.src = url;
+    document.querySelector('.end').appendChild(img);
+  }
+</script>
+</body>
+</html>

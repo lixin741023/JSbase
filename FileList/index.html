@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<input type="file" id="file1" onchange="show(this)">
+<input type="file" id="file2" multiple onchange="show(this)">
+<script>
+  function show(me) {
+
+    console.dir(me); // 查看一个 DOM 元素，最好使用 console.dir 能够看的更清晰。
+
+    console.log(me.files); // 通过 files 属性，可以查看 到 FileList 的实例。
+
+  }
+</script>
+</body>
+</html>

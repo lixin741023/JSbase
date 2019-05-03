@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    hr {
+      display: block;
+      margin: 25px 0;
+    }
+    input[type=file] {
+      display: none;
+    }
+    .button {
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+    .button:active {
+      padding-top: 4px;
+    }
+    .file-info {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+
+<h2>请选择要读取的文件</h2>
+<label>
+  <span class="button">点我读文件</span>
+  <input type="file" onchange="gaga()">
+</label>
+<div class="file-info">
+  <div>
+    <span>文件名：</span>
+    <span class="file-info-name"></span>
+  </div>
+  <div>
+    <span>大小：</span>
+    <span class="file-info-size"></span>
+  </div>
+</div>
+<hr>
+<h3>读取结果:</h3>
+<div class="result"></div>
+<script>
+  async function gaga() {
+    let file = event.target.files[0];
+    let fileName = document.querySelector('.file-info-name');
+    let fileSize = document.querySelector('.file-info-size');
+    let fileResult = document.querySelector('.result');
+    fileName.innerHTML = file.name;
+    fileSize.innerHTML = (file.size / 1024).toFixed(2) + 'KB';
+    fileResult.innerHTML = await readFileContent(file);
+  }
+
+  function readFileContent(file) {
+    return new Promise(resolve => {
+      let read = new FileReader();
+      read.readAsDataURL(file);  // 使用 File对象 或 Blob对象 来指定 要处理的东西。
+      read.onload = function () {
+        resolve(read.result);
+        console.log(read.result);
+      }
+    });
+
+  }
+</script>
+</body>
+</html>

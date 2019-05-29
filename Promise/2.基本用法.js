@@ -1,7 +1,7 @@
 // 基本用法：
 // ES6规定，Promise是一个构造函数，用来生成Promise实例。
 
-let po=new Promise((resolve,reject)=>{
+let po = new Promise((resolve, reject)=>{
 
 });
 console.log(po); // Promise{ <pending> }

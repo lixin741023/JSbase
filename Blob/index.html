@@ -5,11 +5,11 @@
   <title>Title</title>
 </head>
 <body>
-<input type="file" id="A" onchange="gaga()">
+<input type="file" id="A" onchange="chooseFile()">
 <hr>
 <div class="end"></div>
 <script>
-  function gaga() {
+  function chooseFile() {
     let file = A.files[0];
     let url = URL.createObjectURL(file);
     let img = document.createElement('img');

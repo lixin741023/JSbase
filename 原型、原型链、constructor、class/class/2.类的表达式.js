@@ -8,7 +8,7 @@ const Person1=class Person {
 // 同时，也可以省略 Person
 const Person2=class {
     getClassName(){
-        return Person.name;
+        return Person2.name;
     }
 };
 

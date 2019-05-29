@@ -1,8 +1,8 @@
 // 对象有：数据属性 和 访问器属性（getter/setter）
 // ES6 新增了一些简写，增强对象写法：
 
-let name='lx';
-let  obj={
+let name = 'lx';
+let obj = {
     name, // name: name  #1
     action () {
         return 'year 25' // action: function () { return 'year 25' }

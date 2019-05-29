@@ -17,6 +17,7 @@ let lx = new Persion();
 
 class Father {
     constructor(){
+        console.log('Father');
         if(new.target === Father){
             throw new Error('该类只能通过继承使用。');
         }
@@ -25,7 +26,8 @@ class Father {
 
 class Son extends Father {
     constructor(){
-        super()
+        super();
+        console.log('Son');
     }
 }
 

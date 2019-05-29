@@ -1,11 +1,12 @@
 // Promise实例生成以后，可以用then方法分别指定resolved状态和rejected状态的回调函数。
 
-let po=new Promise((resolve,reject)=>{
+let go = new Promise((resolve, reject)=>{
     setTimeout(()=>{
         resolve(12)
     },1000);
 });
-po.then((x)=>{
+
+go.then((x)=>{
     console.log(x); // 12
 },(err)=>{
     console.log(err);

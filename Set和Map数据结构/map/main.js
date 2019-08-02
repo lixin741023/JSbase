@@ -3,7 +3,7 @@
 /***
     let obj={};
     let ele=document.getElementById('button');
-    obj.ele='123';
+    obj[ele]='123';
     obj['[object HTMLDivElement]']
 ***/
 // <|上述代码本意是将一个DOM节点作为obj对象的 Key，但是由于对象只接受字符串作为键名，

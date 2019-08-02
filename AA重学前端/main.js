@@ -3,15 +3,15 @@
 
 // 目前为止，JavaScript 规定了7种 语言类型，其中分为：基本类型（原始类型、primitive type） 和 引用类型。
 
-// Undefined
-// Null
-// Boolean
 // String
 // Number
-
+// Boolean
+// null
+// Undefined
 // Symbol
+// Object
 
-// Object对象 // 对象是复杂的数据类型，又可以分为3个子类型
+// Object对象 // 对象又是复杂的数据类型，又可以分为3个子类型
 // <|狭义的对象（Object）、数组（Array）、函数（Function）
 
 // 基本包装类型

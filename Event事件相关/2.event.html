@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button id="clickMe">click me</button>
+<script>
+  let clickMe = document.querySelector('#clickMe');
+  clickMe.addEventListener('click', showInfo, {
+    once: true
+  });
+  function showInfo(x) {
+    console.log(x);
+  }
+</script>
+</body>
+</html>
